@@ -15,9 +15,9 @@ Production-like AI governance and ML engineering portfolio covering:
 - Responsible RAG with grounding checks and hallucination risk scoring
 - End-to-end deployment simulation (FastAPI, Docker, CI/CD)
 
-### Italian Regulated NLP Transformer Lab
+### [Italian Regulated NLP Transformer Lab](https://github.com/errer441122/regulated-ai-governance-cockpit/tree/main/it4lia-ai-factory-evidence)
 
-End-to-end Italian NLP transformer pipeline within the cockpit:
+End-to-end Italian NLP transformer pipeline within the cockpit. Physical repo path: `it4lia-ai-factory-evidence/`.
 
 - Fine-tuned `dbmdz/bert-base-italian-xxl-cased` on SENTIPOLC public data
 - ONNX export and dynamic quantization: **74.84% model size reduction** (422 MB -> 106 MB)
