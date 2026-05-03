@@ -1,4 +1,4 @@
-# Riccardo Capanna ML Engineering & AI Governance
+# Applied AI / MLOps / Responsible AI
 
 I build auditable ML systems for regulated, industrial and public-sector environments.
 
