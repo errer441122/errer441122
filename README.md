@@ -1,4 +1,4 @@
-# AI Adoption & Data Governance Analyst
+# AI & Data / Business Analytics Intern
 
 I build practical AI/data workflows for business adoption: analytics, workflow automation, governance documentation, human review, and stakeholder-ready deliverables.
 
@@ -24,7 +24,7 @@ The NLP/HPC lab is supporting evidence for evaluation discipline, deployment-rea
 
 ## Target Roles
 
-- AI Adoption Analyst Intern
+- AI Adoption Intern
 - Data & AI Consulting Intern
 - AI Governance / Responsible AI Intern
 - Business / Data Analyst Intern
