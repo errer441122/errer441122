@@ -1,50 +1,39 @@
-# Applied AI / MLOps / Responsible AI
+# AI Adoption & Data Governance Analyst
 
-I build auditable ML systems for regulated, industrial and public-sector environments.
+I build practical AI/data workflows for business adoption: analytics, workflow automation, governance documentation, human review, and stakeholder-ready deliverables.
 
-My work connects **technical model development** with **regulatory compliance** and **business impact quantification** - the trilemma every enterprise adopting AI faces.
+My background is in digital communication and business-facing AI/data work. My portfolio focuses on how organizations can move from AI ideas to governed, measurable, and adoptable workflows.
 
-## Featured Work
+## Best 3 Projects
 
-### [Regulated AI Governance Cockpit](https://github.com/errer441122/regulated-ai-governance-cockpit)
+### 1. [Regulated AI & Data Governance Cockpit](https://github.com/errer441122/regulated-ai-governance-cockpit)
 
-Production-like AI governance and ML engineering portfolio covering:
+Interactive case study showing how a regulated organization could structure AI adoption, workflow scoring, human review, governance guardrails, training, and adoption KPIs before production rollout.
 
-- Model risk validation (calibration, drift, fairness proxy review)
-- AI governance mapping (NIST AI RMF, EU AI Act, ISO 42001)
-- Responsible RAG with grounding checks and hallucination risk scoring
-- End-to-end deployment simulation (FastAPI, Docker, CI/CD)
+### 2. [Industrial CX & Service Analytics Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab)
 
-### [Italian Regulated NLP Transformer Lab](https://github.com/errer441122/regulated-ai-governance-cockpit/tree/main/it4lia-ai-factory-evidence)
+Customer experience and service analytics case study with simulated data, dashboarding, segmentation, action tracking, and business recommendations.
 
-End-to-end Italian NLP transformer pipeline within the cockpit. Physical repo path: `it4lia-ai-factory-evidence/`.
+### 3. [Regulated Agentic Consulting Lab](https://github.com/errer441122/regulated-agentic-consulting-lab)
 
-- Fine-tuned `dbmdz/bert-base-italian-xxl-cased` on SENTIPOLC public data
-- ONNX export and dynamic quantization: **74.84% model size reduction** (422 MB -> 106 MB)
-- Benchmarked inference: **79.36 samples/s**, **99.28 ms p50 latency**
-- HPC-ready packaging with Apptainer for GPU clusters
-- Model card, dataset card, and responsible AI limitations documented
+Governed agentic workflow prototype for consulting-style research, with approval gates, read-only SQL, cost tracking, and audit logging.
 
-## What I Deliver
+## Optional Technical Appendix
 
-| Capability | Evidence | Business Value |
-| --- | --- | --- |
-| **AI Governance & Compliance** | NIST AI RMF, EU AI Act, ISO 42001 gap mapping | De-risk AI adoption; clear regulatory roadmap |
-| **Model Risk & Validation** | Credit-risk ML with calibration, drift, fairness review | Reliable, explainable, auditable decisions |
-| **Applied NLP & HPC Readiness** | Italian BERT fine-tuning, ONNX optimization, Apptainer | Scalable, cost-efficient AI deployment |
+The NLP/HPC lab is supporting evidence for evaluation discipline, deployment-readiness, benchmarking, and limitation documentation. It is not the center of the profile for business, consulting, or AI adoption roles.
 
 ## Target Roles
 
-- AI Governance / Responsible AI Intern
-- Model Risk / Model Validation Intern
+- AI Adoption Analyst Intern
 - Data & AI Consulting Intern
-- MLOps / ML Platform Intern
-- Public-sector AI / Data Science Intern
+- AI Governance / Responsible AI Intern
+- Business / Data Analyst Intern
+- Product or CX Analytics Intern
 
 ## Stack
 
-Python - PyTorch - Transformers - scikit-learn - FastAPI - Docker - ONNX - GitHub Actions - Responsible AI - Model Risk
+Python - SQL - Excel/BI - FastAPI - LLM workflows - Data governance - AI adoption - Workflow automation - Responsible AI documentation
 
 ## Contact
 
-Open to opportunities in consulting, fintech, insurtech, and enterprise AI adoption.
+Open to internship and junior opportunities in AI adoption, data governance, consulting, analytics, and business-facing AI implementation.
