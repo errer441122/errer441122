@@ -1,39 +1,76 @@
-# AI & Data / Business Analytics Intern
+# Digital / Web / Marketing / CX Analytics Intern
 
-I build practical AI/data workflows for business adoption: analytics, workflow automation, governance documentation, human review, and stakeholder-ready deliverables.
+I build business-facing analytics portfolio projects that turn campaign, customer and market signals into KPI reports, dashboards, customer insights and practical recommendations.
 
-My background is in digital communication and business-facing AI/data work. My portfolio focuses on how organizations can move from AI ideas to governed, measurable, and adoptable workflows.
+My background is in Communication Sciences and Digital Media. I use AI-assisted workflows to support research, reporting, documentation and quality checks, without claiming production/client data.
 
-## Best 3 Projects
+## Best projects for recruiters
 
-### 1. [Regulated AI & Data Governance Cockpit](https://github.com/errer441122/regulated-ai-governance-cockpit)
+### 1. [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
 
-Interactive case study showing how a regulated organization could structure AI adoption, workflow scoring, human review, governance guardrails, training, and adoption KPIs before production rollout.
+Simulated digital campaign analytics case study: KPI reporting, channel performance, landing page insights, dashboard workbook and optimization recommendations.
+
+Best fit: Web Analyst Junior, Digital Analytics Intern, Digital Campaign Intern, Digital Marketing Intern.
 
 ### 2. [Industrial CX & Service Analytics Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab)
 
-Customer experience and service analytics case study with simulated data, dashboarding, segmentation, action tracking, and business recommendations.
+Customer experience and service analytics case study with simulated data, KPI logic, segmentation, dashboard workbook, action tracker and business recommendations.
 
-### 3. [Regulated Agentic Consulting Lab](https://github.com/errer441122/regulated-agentic-consulting-lab)
+Best fit: CX Analyst Intern, Marketing Analyst Intern, Digital Analytics Intern, Trade Marketing Intern, Market Intelligence Intern.
 
-Governed agentic workflow prototype for consulting-style research, with approval gates, read-only SQL, cost tracking, and audit logging.
+### 3. [Regulated AI & Data Governance Cockpit](https://github.com/errer441122/regulated-ai-governance-cockpit)
 
-## Optional Technical Appendix
+AI adoption and workflow analytics case study showing use-case intake, human review, rollout KPIs, governance documentation and stakeholder-ready evidence.
 
-The NLP/HPC lab is supporting evidence for evaluation discipline, deployment-readiness, benchmarking, and limitation documentation. It is not the center of the profile for business, consulting, or AI adoption roles.
+Best fit: AI-assisted Business Analyst Intern, Digital Transformation Intern, AI Adoption Intern.
 
-## Target Roles
+### 4. [Regulated Agentic Consulting Lab](https://github.com/errer441122/regulated-agentic-consulting-lab)
 
-- AI Adoption Intern
-- Data & AI Consulting Intern
-- AI Governance / Responsible AI Intern
-- Business / Data Analyst Intern
-- Product or CX Analytics Intern
+Controlled AI-assisted research/reporting workflow with approval gates, read-only SQL, cost tracking and audit logs.
+
+Best fit: AI Business Analyst Intern, Consulting Support Intern, AI-assisted Market Research Intern.
+
+## Target roles
+
+- Web Analyst Junior
+- Digital Analytics Intern
+- Digital Campaign Intern
+- Digital Marketing Intern
+- Marketing / CX Analyst Intern
+- Market Intelligence Intern
+- Trade Marketing Intern
+- AI-assisted Business Analyst Intern
+
+## For recruiters
+
+### If you are hiring for Web / Digital Analytics
+
+Start here:
+- [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
+- [Industrial CX & Service Analytics Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab)
+
+### If you are hiring for Digital Marketing / Campaign Intern
+
+Start here:
+- [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
+- [Industrial CX & Service Analytics Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab)
+
+### If you are hiring for CX / Marketing Analyst
+
+Start here:
+- [Industrial CX & Service Analytics Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab)
+- [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
+
+### If you are hiring for AI-assisted Business Analyst
+
+Start here:
+- [Regulated AI & Data Governance Cockpit](https://github.com/errer441122/regulated-ai-governance-cockpit)
+- [Regulated Agentic Consulting Lab](https://github.com/errer441122/regulated-agentic-consulting-lab)
 
 ## Stack
 
-Python - SQL - Excel/BI - FastAPI - LLM workflows - Data governance - AI adoption - Workflow automation - Responsible AI documentation
+Excel / Google Sheets - KPI reporting - customer insights - segmentation - basic SQL - Python for portfolio analytics - GitHub - AI-assisted research/reporting - dashboard documentation
 
-## Contact
+## Boundaries
 
-Open to internship and junior opportunities in AI adoption, data governance, consulting, analytics, and business-facing AI implementation.
+All projects are portfolio case studies using simulated or public data. They do not claim access to real company, client, user, advertising, analytics or production data.
