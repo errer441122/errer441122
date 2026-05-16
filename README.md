@@ -14,30 +14,9 @@ Marketing Analyst · Operations Analyst · AI Adoption Intern.
 
 ---
 
-## Three projects worth your five minutes
+## Two projects worth your five minutes
 
-### 1. [Regulated AI & Data Governance Cockpit](https://github.com/errer441122/regulated-ai-governance-cockpit)
-
-AI-adoption and data-analytics case study on the **public UCI Bank Marketing** dataset,
-with CI that validates every committed result.
-
-- **Subscription-driver model** — multivariate logistic regression with Wald odds
-  ratios, 95% CIs and p-values; `duration` excluded as documented target leakage;
-  decision threshold selected on a validation split; held-out ROC-AUC, PR-AUC,
-  calibration and cumulative-gains/lift readout.
-  → [`subscription_drivers.md`](https://github.com/errer441122/regulated-ai-governance-cockpit/blob/main/digital-campaign-performance-dashboard/analysis/subscription_drivers.md)
-  · [`analyze_subscription_drivers.py`](https://github.com/errer441122/regulated-ai-governance-cockpit/blob/main/digital-campaign-performance-dashboard/src/analyze_subscription_drivers.py)
-- **Customer segmentation** — K-means personas with *k* chosen 4–6 by silhouette
-  (the label is never used to cluster), plus a shallow decision-tree targeting
-  policy with **out-of-sample lift** and a recommended action per segment.
-  → [`customer_segments.md`](https://github.com/errer441122/regulated-ai-governance-cockpit/blob/main/digital-campaign-performance-dashboard/analysis/customer_segments.md)
-  · [`segment_customers.py`](https://github.com/errer441122/regulated-ai-governance-cockpit/blob/main/digital-campaign-performance-dashboard/src/segment_customers.py)
-- **Executive summary** written as a decision document, not a feature list.
-  → [`executive_summary.md`](https://github.com/errer441122/regulated-ai-governance-cockpit/blob/main/digital-campaign-performance-dashboard/reports/executive_summary.md)
-
-*Best fit: AI Adoption Intern · Business Analyst · Operations Analyst.*
-
-### 2. [Industrial CX & Service Analytics Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab)
+### 1. [Industrial CX & Service Analytics Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab)
 
 Customer-experience analytics on a **disclosed synthetic** dataset (published data
 card with the generative model and seed — no hidden hand-tuning).
@@ -55,7 +34,7 @@ card with the generative model and seed — no hidden hand-tuning).
 
 *Best fit: Data Analyst – Customer Experience · Marketing Analyst.*
 
-### 3. [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
+### 2. [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
 
 Campaign analytics with a deep dive beyond a KPI table.
 
