@@ -1,85 +1,58 @@
-# Data / Marketing / CX Analytics — Internship Portfolio
+# Digital / Marketing / CX Analytics Intern
 
-I build small, **reviewable** analytics case studies that go past KPI reporting into
-modelling: a hiring manager can open one repo, read a decision-style report, and
-check the code and tests behind every number.
+I build practical analytics projects for campaign reporting, web measurement,
+Customer Experience, and business-facing data storytelling. The portfolio is
+organized around clear KPI definitions, reproducible validation, SQL/BI evidence,
+tracking documentation, and stakeholder-ready recommendations.
 
-Background in Communication Sciences and Digital Media. I use AI-assisted workflows
-for research, documentation and QA, and I am explicit about data provenance — these
-projects use **public** datasets or **disclosed synthetic** data, never client or
-production data.
+## Start Here
 
-**Target internships:** Data Analyst – Customer Experience · Business Analyst ·
-Marketing Analyst · Operations Analyst · AI Adoption Intern.
+| If you are hiring for | Open first | Why |
+| --- | --- | --- |
+| Digital Marketing / Campaign Analytics | [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard) | GA4 event plan, UTM taxonomy, Consent Mode/GDPR notes, tracking QA checklist, A/B-style uplift readout, weekly campaign insights, SQL evidence, and BI specs |
+| Customer Experience / Customer Insights | [CX Analyst Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab/tree/main/cx-analyst-lab) | Satisfaction brief, driver ranking, at-risk segment, follow-up cohort, comment themes, SQL views, and a Power BI-style star schema |
+| Marketing / BI Analyst | [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard) + [CX Analyst Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab/tree/main/cx-analyst-lab) | Campaign KPIs, customer segmentation, SQL reporting, dashboard-ready data models, and clear business recommendations |
 
----
+## Best Projects For Marketing / CX Roles
 
-## Two projects worth your five minutes
+### 1. [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
 
-### 1. [Industrial CX & Service Analytics Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab)
+Campaign analytics case study with simulated but reproducible data, realistic
+weekly variance, Excel dashboard, A/B-style uplift readout, GA4/UTM/consent
+documentation, tracking QA, SQL evidence, and BI specifications.
 
-Customer-experience analytics on a **disclosed synthetic** dataset (published data
-card with the generative model and seed — no hidden hand-tuning).
+### 2. [CX Analyst Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab/tree/main/cx-analyst-lab)
 
-- **Driver analysis** — two-proportion z-test (pooled), Cohen's *h* effect size,
-  Wilson 95% CIs, ranked at-risk segments, plus a follow-up cohort comparison and
-  comment-theme tagging.
-  → [`cx_driver_analysis.md`](https://github.com/errer441122/industrial-cx-service-analytics-lab/blob/main/cx-analyst-lab/reports/cx_driver_analysis.md)
-  · [`cx_driver_analysis.py`](https://github.com/errer441122/industrial-cx-service-analytics-lab/blob/main/cx-analyst-lab/src/cx_driver_analysis.py)
-- **Reproducible data** — deterministic generator and a transparent data card.
-  → [`generate_cx_dataset.py`](https://github.com/errer441122/industrial-cx-service-analytics-lab/blob/main/cx-analyst-lab/src/generate_cx_dataset.py)
-  · [`cx_dataset_card.md`](https://github.com/errer441122/industrial-cx-service-analytics-lab/blob/main/cx-analyst-lab/data/cx_dataset_card.md)
-- Behavioral tests assert the analysis *recovers the injected structure*, not brittle
-  snapshots. → [`test_cx_metrics.py`](https://github.com/errer441122/industrial-cx-service-analytics-lab/blob/main/cx-analyst-lab/tests/test_cx_metrics.py)
+Customer Experience analyst lab focused on satisfaction drivers, at-risk
+segments, follow-up completion, customer comment themes, SQL reporting views,
+Power BI-style modelling, and stakeholder communication.
 
-*Best fit: Data Analyst – Customer Experience · Marketing Analyst.*
+## Optional Technical Appendix
 
-### 2. [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
+[Regulated AI & Data Governance Cockpit](https://github.com/errer441122/regulated-ai-governance-cockpit)
+is supporting evidence for AI governance, model-risk thinking, human review, and
+technical validation. It is not the front door for Digital Marketing, CRM,
+E-commerce, or CX analyst screening.
 
-Campaign analytics with a deep dive beyond a KPI table.
+## Target Roles
 
-- **Campaign deep dive** — variance-aware weekly trend (slope, R², coefficient of
-  variation), uplift-over-time vs a baseline week, audience-segment and
-  segment×channel economics with a per-segment action, and a **cross-source
-  reconciliation** of the three CSVs that fails the build on a mismatch.
-  → [`campaign_deep_dive.md`](https://github.com/errer441122/digital-campaign-performance-dashboard/blob/main/analysis/campaign_deep_dive.md)
-  · [`campaign_deep_dive.py`](https://github.com/errer441122/digital-campaign-performance-dashboard/blob/main/src/campaign_deep_dive.py)
-- **CSV formula-injection hardening** — every text cell written to the workbook is
-  neutralised against spreadsheet formula/DDE injection, with tests.
-  → [`build_dashboard.py`](https://github.com/errer441122/digital-campaign-performance-dashboard/blob/main/src/build_dashboard.py)
-  · [`test_campaign_deep_dive.py`](https://github.com/errer441122/digital-campaign-performance-dashboard/blob/main/tests/test_campaign_deep_dive.py)
+- Digital Marketing Intern
+- Campaign Analyst Intern
+- Web / Digital Analytics Intern
+- Customer Experience Analyst Intern
+- Customer Insights Analyst Intern
 
-*Best fit: Marketing Analyst · Business Analyst · Operations Analyst.*
-
----
-
-## What the code shows (not just the charts)
-
-- **Leakage-aware**: target/post-outcome fields excluded; model selection on a
-  validation split; results read on a held-out test split.
-- **Reproducible**: fixed seeds, deterministic generators, pinned dependencies; the
-  cockpit's results are re-validated in CI on every push.
-- **Tested**: behavioral/range tests that check the *meaning* of the output.
-- **Honest boundaries**: public vs synthetic data is stated everywhere; no causal
-  claims on observational data; no client/production data.
-
-## Recruiter routing
-
-| If you are hiring for | Start here |
-| --- | --- |
-| Data Analyst – Customer Experience | CX & Service Analytics Lab → Cockpit |
-| Marketing Analyst | Campaign Performance Dashboard → CX Lab |
-| Business / Operations Analyst | Cockpit → Campaign Performance Dashboard |
-| AI Adoption Intern | Regulated AI & Data Governance Cockpit |
+Secondary adjacent searches: Marketing / BI Analyst Intern, Trade Marketing
+Intern, and Market Intelligence Intern.
 
 ## Stack
 
-Python (pandas-free stdlib + scikit-learn / numpy) · logistic regression · K-means &
-decision trees · hypothesis testing & effect sizes · Excel / Google Sheets KPI
-reporting · SQL · pytest · GitHub Actions CI · AI-assisted research and documentation.
+Python - SQL - Excel/BI - GA4 measurement planning - UTM governance - Consent
+Mode/GDPR notes - Power BI/Tableau/Looker specs - KPI storytelling -
+reproducible validation
 
-## Boundaries
+## Contact
 
-All projects are portfolio case studies on **public** datasets (UCI Bank Marketing,
-CC BY 4.0) or **disclosed synthetic** data with a published data card. They do not
-claim access to real company, client, user, advertising, analytics or production data.
+Open to internship and junior opportunities in digital analytics, campaign
+reporting, Customer Experience, customer insights, marketing analytics, and
+business-facing data work.
