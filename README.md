@@ -1,58 +1,72 @@
-# Digital / Marketing / CX Analytics Intern
+# Digital Marketing / CX / CRM Analytics Intern
 
-I build practical analytics projects for campaign reporting, web measurement,
-Customer Experience, and business-facing data storytelling. The portfolio is
-organized around clear KPI definitions, reproducible validation, SQL/BI evidence,
-tracking documentation, and stakeholder-ready recommendations.
+I build practical, reviewable analytics projects: a hiring manager can open
+one repo, read a decision-style report, and check the code and tests behind
+every number. The work spans campaign performance, multi-touch attribution,
+CRM lifecycle and retention, and Customer Experience — on **public or
+disclosed-synthetic** data, never client or production data.
 
-## Start Here
+## Start here
 
-| If you are hiring for | Open first | Why |
+| If you are hiring for | Open first | What it shows |
 | --- | --- | --- |
-| Digital Marketing / Campaign Analytics | [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard) | GA4 event plan, UTM taxonomy, Consent Mode/GDPR notes, tracking QA checklist, A/B-style uplift readout, weekly campaign insights, SQL evidence, and BI specs |
-| Customer Experience / Customer Insights | [CX Analyst Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab/tree/main/cx-analyst-lab) | Satisfaction brief, driver ranking, at-risk segment, follow-up cohort, comment themes, SQL views, and a Power BI-style star schema |
-| Marketing / BI Analyst | [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard) + [CX Analyst Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab/tree/main/cx-analyst-lab) | Campaign KPIs, customer segmentation, SQL reporting, dashboard-ready data models, and clear business recommendations |
+| Performance Marketing / Digital Marketing Analyst | [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard) | Variance-aware campaign deep dive, multi-touch attribution (incl. data-driven Markov), saturation-aware budget reallocation, A/B uplift, GA4 / UTM / Consent Mode docs, SQL + BI specs |
+| CRM / Marketing Automation / E-commerce Analyst | [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard) | RFM segmentation → automation map, cohort retention, historical CLV by acquisition channel, the CPA-vs-LTV bridge |
+| Customer Experience / Customer Insights | [CX & Service Analytics Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab) | NPS (with CI, by segment), multivariate logistic driver model, bivariate driver ranking, follow-up cohort, comment themes, SQL views + Power BI star schema |
 
-## Best Projects For Marketing / CX Roles
+## Featured projects
 
 ### 1. [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
 
-Campaign analytics case study with simulated but reproducible data, realistic
-weekly variance, Excel dashboard, A/B-style uplift readout, GA4/UTM/consent
-documentation, tracking QA, SQL evidence, and BI specifications.
+Full-funnel marketing analytics on seeded, documented synthetic data:
+campaign deep dive with real week-to-week variance, **multi-touch
+attribution** (first/last/linear/position-based + a data-driven Markov
+removal-effect model), **saturation-aware budget reallocation**, and a
+**CRM & retention** module (RFM → automation flows, cohort retention,
+CLV by acquisition channel). A/B uplift readout, GA4 event plan, UTM
+taxonomy, Consent Mode/GDPR notes, SQL evidence, Power BI/Tableau/Looker
+specs. CI-validated, tested.
 
-### 2. [CX Analyst Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab/tree/main/cx-analyst-lab)
+### 2. [CX & Service Analytics Lab](https://github.com/errer441122/industrial-cx-service-analytics-lab)
 
-Customer Experience analyst lab focused on satisfaction drivers, at-risk
-segments, follow-up completion, customer comment themes, SQL reporting views,
-Power BI-style modelling, and stakeholder communication.
+Customer Experience analytics on disclosed-synthetic feedback: **Net
+Promoter Score** (variance-based CI, NPS by segment), a **multivariate
+logistic regression** that re-checks each driver controlling for
+confounders, the bivariate driver ranking (two-proportion z-tests,
+Cohen's *h*, Wilson CIs), follow-up-cohort effectiveness, comment-theme
+extraction, SQL reporting views and a Power BI-style star schema.
+CI-validated, tested.
 
-## Optional Technical Appendix
+## Target roles
 
-[Regulated AI & Data Governance Cockpit](https://github.com/errer441122/regulated-ai-governance-cockpit)
-is supporting evidence for AI governance, model-risk thinking, human review, and
-technical validation. It is not the front door for Digital Marketing, CRM,
-E-commerce, or CX analyst screening.
+- CRM / Marketing Automation Intern
+- Performance Marketing Intern
+- Digital Marketing Analyst Intern
+- Customer Experience Intern
+- Customer Insights Intern
+- E-commerce Analyst Intern
 
-## Target Roles
-
-- Digital Marketing Intern
-- Campaign Analyst Intern
-- Web / Digital Analytics Intern
-- Customer Experience Analyst Intern
-- Customer Insights Analyst Intern
-
-Secondary adjacent searches: Marketing / BI Analyst Intern, Trade Marketing
-Intern, and Market Intelligence Intern.
+Adjacent: Marketing Analyst, Business Analyst, Web/Digital Analytics,
+Market Intelligence.
 
 ## Stack
 
-Python - SQL - Excel/BI - GA4 measurement planning - UTM governance - Consent
-Mode/GDPR notes - Power BI/Tableau/Looker specs - KPI storytelling -
-reproducible validation
+Python (stdlib + scikit-learn/numpy where useful) · multi-touch &
+Markov attribution · RFM / cohort retention / CLV · NPS & CSAT ·
+logistic regression, hypothesis testing & effect sizes · SQL ·
+Excel / Power BI / Tableau / Looker specs · GA4 measurement planning ·
+UTM governance · Consent Mode/GDPR notes · reproducible validation ·
+pytest · GitHub Actions CI.
+
+## Boundaries
+
+All projects are portfolio case studies on **public** datasets or
+**disclosed synthetic** data with a published data card. They do not
+claim access to real company, client, user, advertising, CRM or
+production data.
 
 ## Contact
 
-Open to internship and junior opportunities in digital analytics, campaign
-reporting, Customer Experience, customer insights, marketing analytics, and
-business-facing data work.
+Open to internship and junior opportunities in CRM/marketing automation,
+performance & digital marketing analytics, customer experience, customer
+insights, and e-commerce analytics.
