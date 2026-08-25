@@ -74,15 +74,6 @@ implementation after the business overview.
 | E-commerce CX Analytics | Disclosed NPS proxy, two-proportion tests, Cohen's *h*, confidence intervals, delivery-SLA cohorts, multivariate logistic regression and Portuguese comment themes | Python standard library, real Olist review data, unit tests, GitHub Actions |
 | Agentic Audit Reporting | SHA-256 hash-chained JSONL events, replay and verification, human approval records, HTML compliance reporting | Python standard library, pytest-compatible tests, GitHub Actions, GitHub Pages |
 
-## Target roles
-
-- CRM / Marketing Automation Intern
-- Performance Marketing / Digital Marketing Analyst Intern
-- Customer Experience / Customer Insights Intern
-- E-commerce Analyst Intern
-- Junior Marketing or Business Analyst
-- Responsible-AI / AI-governance-adjacent roles
-
 ## Data boundaries
 
 Every project uses a real public dataset with source and license information,
