@@ -8,7 +8,8 @@ I'm looking for an internship or junior role where I can keep learning by workin
 
 | If you are hiring for | Open first | The business question |
 | --- | --- | --- |
-| Performance / Digital Marketing · CRM / Marketing Automation · E-commerce | [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard) | Which campaigns, audiences and customer segments deserve attention—and how should that change budget and CRM actions? |
+| CRM / Marketing Automation · Lifecycle & Email | [Lifecycle Automation Lab](https://github.com/errer441122/lifecycle-automation-lab) | Can an analysis model actually drive an ESP—segment, flow, send—without ever emailing someone who did not consent? |
+| Performance / Digital Marketing · E-commerce | [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard) | Which campaigns, audiences and customer segments deserve attention—and how should that change budget and CRM actions? |
 | Customer Experience / Customer Insights | [E-commerce CX Analytics](https://github.com/errer441122/ecommerce-cx-analytics) | What is most closely associated with a poor Olist customer experience, and where should a CX team act first? |
 | AI governance / responsible AI | [Agentic Audit Reporting](https://github.com/errer441122/agentic-audit-reporting) · [live report](https://errer441122.github.io/agentic-audit-reporting/abm_compliance_report.html) | How can an AI-assisted workflow remain traceable, reviewable and subject to human approval? |
 
@@ -20,11 +21,29 @@ and challenge the result. Where realistic public data does not exist, I
 label the simulated parts instead of presenting them as client or production
 data.
 
+Three of these projects analyse. One of them operates: the lifecycle work
+runs on a real Klaviyo account connected to a real Shopify store, because
+knowing what a flow *should* do and getting an ESP to actually do it are
+different skills.
+
 The projects are not meant to pretend I have already seen every real company
 setup. They are how I practise turning an open-ended question into a useful
 report, while being honest about what the data can and cannot prove.
 
 ## Featured projects
+
+### [Lifecycle Automation Lab](https://github.com/errer441122/lifecycle-automation-lab)
+
+Consent-first lifecycle automation built and configured end to end: three
+Klaviyo flows—welcome with double opt-in, abandoned cart, win-back—on a
+Shopify store, plus the Python bridge that turns RFM/lifecycle output into
+the segment property the win-back flow triggers on.
+
+The parts worth reviewing:
+
+- the [flow specification](https://github.com/errer441122/lifecycle-automation-lab/blob/main/docs/flows.md), which records *why* each delay was chosen and what test would replace it;
+- the [consent design](https://github.com/errer441122/lifecycle-automation-lab/blob/main/docs/consent.md)—double opt-in enforced at list level, and a sync script that is structurally unable to grant consent, only to refuse to act without it;
+- the [deliverability notes](https://github.com/errer441122/lifecycle-automation-lab/blob/main/docs/deliverability.md): SPF, DKIM and DMARC verified against public DNS rather than a vendor dashboard, after a parked-domain wildcard produced a false "verified" status.
 
 ### [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
 
@@ -70,19 +89,31 @@ implementation after the business overview.
 
 | Project | Methods and evidence | Main tools |
 | --- | --- | --- |
+| Lifecycle Automation | Event-triggered flows with exit conditions re-evaluated before every send, double opt-in as a list-level gate, suppression logic, RFM→ESP segment sync behind a hard consent check, sending-domain authentication (NS delegation, DKIM, DMARC), UTM taxonomy across all flow links | Klaviyo, Shopify, Python standard library, unittest, DNS |
 | Digital Campaign Performance | RFM, cohort retention, historical CLV, A/B uplift, multi-touch attribution including Markov removal effect, saturation-aware budget scenarios, GA4 event planning and UTM/consent governance | Python, SQL, Excel, Power BI/Tableau/Looker specifications, pytest, GitHub Actions |
 | E-commerce CX Analytics | Disclosed NPS proxy, two-proportion tests, Cohen's *h*, confidence intervals, delivery-SLA cohorts, multivariate logistic regression and Portuguese comment themes | Python standard library, real Olist review data, unit tests, GitHub Actions |
 | Agentic Audit Reporting | SHA-256 hash-chained JSONL events, replay and verification, human approval records, HTML compliance reporting | Python standard library, pytest-compatible tests, GitHub Actions, GitHub Pages |
 
 ## Data boundaries
 
-Every project uses a real public dataset with source and license information,
-or clearly labelled deterministic simulation where suitable public data is
-not available. Nothing here claims access to client, advertising-platform,
-CRM, user or production data.
+The analytics projects use a real public dataset with source and license
+information, or clearly labelled deterministic simulation where suitable
+public data is not available.
+
+The lifecycle project is different and is labelled as such in its own README:
+the Klaviyo account, the Shopify store and the authenticated sending domain
+are real, but the store is a development store and the orders in it were
+seeded for the build. Every flow is in draft, nothing has been sent, and the
+list has no subscribers. The mechanism is real; the volume is not.
+
+Nothing in this portfolio claims access to client, advertising-platform,
+production CRM or real customer data.
 
 ## Contact
 
-I'm open to internship and junior opportunities in marketing analytics, CRM
-and marketing automation, customer experience, e-commerce analytics and
-responsible-AI governance.
+Bologna, Italy · CET — open to remote work across EU time zones.
+
+I'm looking for an internship or junior role in marketing automation and CRM.
+
+- LinkedIn: [riccardo-capanna](https://www.linkedin.com/in/riccardo-capanna-039a43415/)
+- Email: errer441122@gmail.com
