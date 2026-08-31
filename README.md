@@ -34,16 +34,18 @@ report, while being honest about what the data can and cannot prove.
 
 ### [Lifecycle Automation Lab](https://github.com/errer441122/lifecycle-automation-lab)
 
-Consent-first lifecycle automation built and configured end to end: three
-Klaviyo flows—welcome with double opt-in, abandoned cart, win-back—on a
-Shopify store, plus the Python bridge that turns RFM/lifecycle output into
-the segment property the win-back flow triggers on.
+Consent-first lifecycle automation, built and then actually run: three Klaviyo
+flows—welcome with double opt-in, abandoned cart, win-back—on a Shopify store,
+plus the Python bridge that turns RFM/lifecycle output into the segment
+property the win-back triggers on. All three have been entered by real events
+and have delivered. One subscriber and three sends: a working mechanism, not a
+measurement, and the write-up says which is which.
 
 The parts worth reviewing:
 
-- the [flow specification](https://github.com/errer441122/lifecycle-automation-lab/blob/main/docs/flows.md), which records *why* each delay was chosen and what test would replace it;
-- the [consent design](https://github.com/errer441122/lifecycle-automation-lab/blob/main/docs/consent.md)—double opt-in enforced at list level, and a sync script that is structurally unable to grant consent, only to refuse to act without it;
-- the [deliverability notes](https://github.com/errer441122/lifecycle-automation-lab/blob/main/docs/deliverability.md): SPF, DKIM and DMARC verified against public DNS rather than a vendor dashboard, after a parked-domain wildcard produced a false "verified" status.
+- the [results](https://github.com/errer441122/lifecycle-automation-lab/blob/main/reports/results.md)—what ran, and the ten things that broke on the way. The one worth opening it for: **Smart Sending silently skipped the first abandoned-cart email** because a welcome had gone out five hours earlier. Not a bug, the feature working and costing a conversion. Nothing in the API said so—no send event, no skip event—and one screen in the ESP names the reason. It was left switched on and reported rather than switched off;
+- the [consent design](https://github.com/errer441122/lifecycle-automation-lab/blob/main/docs/consent.md)—double opt-in enforced at list level, and a sync script structurally unable to grant consent, only to refuse to act without it. A subscriber who arrived through Shopify's own newsletter field, `SUBSCRIBED` 86 ms after the webhook with no confirmation, is documented as the leak it is;
+- the [flow specification](https://github.com/errer441122/lifecycle-automation-lab/blob/main/docs/flows.md), which records *why* each delay was chosen and what test would replace it—including the one claim still unproven, and the experiment that would settle it.
 
 ### [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard)
 
