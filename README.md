@@ -2,7 +2,7 @@
 
 Hi, I'm Riccardo. I'm building this portfolio around a simple question: how can marketing and customer data help a team make a better decision?
 I enjoy working across campaigns, CRM and customer experience, and I try to make every project easy to review—not just technically correct.
-I'm looking for an internship or junior role where I can keep learning by working on real business questions.
+
 
 ## Start here
 
