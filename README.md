@@ -112,10 +112,5 @@ Nothing in this portfolio claims access to client, advertising-platform,
 production CRM or real customer data.
 
 ## Contact
-
-Bologna, Italy · CET — open to remote work across EU time zones.
-
-I'm looking for an internship or junior role in marketing automation and CRM.
-
 - LinkedIn: [riccardo-capanna](https://www.linkedin.com/in/riccardo-capanna-039a43415/)
 
