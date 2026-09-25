@@ -105,8 +105,8 @@ public data is not available.
 The lifecycle project is different and is labelled as such in its own README:
 the Klaviyo account, the Shopify store and the authenticated sending domain
 are real, but the store is a development store and the orders in it were
-seeded for the build. Every flow is in draft, nothing has been sent, and the
-list has no subscribers. The mechanism is real; the volume is not.
+seeded for the build. The flows are live and have delivered, but to one
+subscriber and three sends. The mechanism is real; the volume is not.
 
 Nothing in this portfolio claims access to client, advertising-platform,
 production CRM or real customer data.
