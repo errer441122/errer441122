@@ -9,7 +9,7 @@ I'm looking for an internship or junior role where I can keep learning by workin
 | If you are hiring for | Open first | The business question |
 | --- | --- | --- |
 | CRM / Marketing Automation · Lifecycle & Email | [Lifecycle Automation Lab](https://github.com/errer441122/lifecycle-automation-lab) | Can an analysis model actually drive an ESP—segment, flow, send—without ever emailing someone who did not consent? |
-| Performance / Digital Marketing · E-commerce | [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard) | Which campaigns, audiences and customer segments deserve attention—and how should that change budget and CRM actions? |
+| Performance / Digital Marketing · E-commerce | [Digital Campaign Performance Dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard) · [live dashboard](https://errer441122.github.io/digital-campaign-performance-dashboard/) | Which campaigns, audiences and customer segments deserve attention—and how should that change budget and CRM actions? |
 | Customer Experience / Customer Insights | [E-commerce CX Analytics](https://github.com/errer441122/ecommerce-cx-analytics) | What is most closely associated with a poor Olist customer experience, and where should a CX team act first? |
 | AI governance / responsible AI | [Agentic Audit Reporting](https://github.com/errer441122/agentic-audit-reporting) · [live report](https://errer441122.github.io/agentic-audit-reporting/abm_compliance_report.html) | How can an AI-assisted workflow remain traceable, reviewable and subject to human approval? |
 
@@ -57,7 +57,7 @@ public dataset is not available.
 
 What to open first:
 
-- the [dashboard preview](https://github.com/errer441122/digital-campaign-performance-dashboard#dashboard-preview);
+- the [live dashboard](https://errer441122.github.io/digital-campaign-performance-dashboard/);
 - the [executive summary](https://github.com/errer441122/digital-campaign-performance-dashboard/blob/main/reports/executive_summary.md);
 - the [five-minute recruiter route](https://github.com/errer441122/digital-campaign-performance-dashboard#recruiter-5-minute-route).
 
@@ -92,8 +92,8 @@ implementation after the business overview.
 | Project | Methods and evidence | Main tools |
 | --- | --- | --- |
 | Lifecycle Automation | Event-triggered flows with exit conditions re-evaluated before every send, double opt-in as a list-level gate, suppression logic, RFM→ESP segment sync behind a hard consent check, sending-domain authentication (NS delegation, DKIM, DMARC), UTM taxonomy across all flow links | Klaviyo, Shopify, Python standard library, unittest, DNS |
-| Digital Campaign Performance | RFM, cohort retention, historical CLV, A/B uplift, multi-touch attribution including Markov removal effect, saturation-aware budget scenarios, GA4 event planning and UTM/consent governance | Python, SQL, Excel, Power BI/Tableau/Looker specifications, pytest, GitHub Actions |
-| E-commerce CX Analytics | Disclosed NPS proxy, two-proportion tests, Cohen's *h*, confidence intervals, delivery-SLA cohorts, multivariate logistic regression and Portuguese comment themes | Python standard library, real Olist review data, unit tests, GitHub Actions |
+| Digital Campaign Performance | RFM, cohort retention, historical CLV, A/B uplift, multi-touch attribution including Markov removal effect, saturation-aware budget scenarios, GA4 event planning and UTM/consent governance | Python, pandas, DuckDB SQL, statsmodels, Excel, Power BI/Tableau/Looker specifications, pytest, GitHub Actions |
+| E-commerce CX Analytics | Disclosed NPS proxy, two-proportion tests, Cohen's *h*, confidence intervals, delivery-SLA cohorts, multivariate logistic regression and Portuguese comment themes | Python, pandas, statsmodels, real Olist review data, unit tests, GitHub Actions |
 | Agentic Audit Reporting | SHA-256 hash-chained JSONL events, replay and verification, human approval records, HTML compliance reporting | Python standard library, pytest-compatible tests, GitHub Actions, GitHub Pages |
 
 ## Data boundaries
