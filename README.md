@@ -30,6 +30,12 @@ The projects are not meant to pretend I have already seen every real company
 setup. They are how I practise turning an open-ended question into a useful
 report, while being honest about what the data can and cannot prove.
 
+**How I built them.** I used AI coding assistants as a pair programmer: they
+drafted most of the code and documentation. My part: choosing the business
+question and the data, defining the rules and metrics, checking results
+against the source data and deciding what to report, including what did not
+work.
+
 ## Featured projects
 
 ### [Lifecycle Automation Lab](https://github.com/errer441122/lifecycle-automation-lab)
