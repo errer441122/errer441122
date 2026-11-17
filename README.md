@@ -8,13 +8,17 @@ I have no work experience yet. What I have is practice. I like understanding
 how customer data and automated flows help a team decide who to talk to, when,
 and with which message. These three projects are how I practise that.
 
+Each one has a page where you can load your own CSV exports and get the
+result in the browser; the example files are there only to show what the
+output looks like. Nothing is uploaded: the code runs on your computer.
+
 ## Start here
 
 | If you are hiring for | Open this project | The business question |
 | --- | --- | --- |
-| CRM / Marketing Automation | [Lifecycle Automation Lab](https://github.com/errer441122/lifecycle-automation-lab) | Which customer gets which email, and when? Is every template safe to send, and can every subscriber's consent be proven? |
-| Performance / Digital Marketing | [CRM retention practice](https://github.com/errer441122/digital-campaign-performance-dashboard) · [live page](https://errer441122.github.io/digital-campaign-performance-dashboard/) | Which customers bring the revenue, who is about to leave, and what should each group receive? |
-| Customer Experience / Insights | [E-commerce CX Analytics](https://github.com/errer441122/ecommerce-cx-analytics) | Why do customers leave bad reviews, and where should the team act first? |
+| CRM / Marketing Automation | [Lifecycle Automation Lab](https://github.com/errer441122/lifecycle-automation-lab) · [try it with your files](https://errer441122.github.io/lifecycle-automation-lab/) | Which customer gets which email, and when? Is every template safe to send, and can every subscriber's consent be proven? |
+| Performance / Digital Marketing | [CRM retention practice](https://github.com/errer441122/digital-campaign-performance-dashboard) · [live page](https://errer441122.github.io/digital-campaign-performance-dashboard/) · [try it with your files](https://errer441122.github.io/digital-campaign-performance-dashboard/app.html) | Which customers bring the revenue, who is about to leave, and what should each group receive? |
+| Customer Experience / Insights | [E-commerce CX Analytics](https://github.com/errer441122/ecommerce-cx-analytics) · [try it with your files](https://errer441122.github.io/ecommerce-cx-analytics/) | Why do customers leave bad reviews, and where should the team act first? |
 
 ## The projects in short
 
