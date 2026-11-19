@@ -1,96 +1,50 @@
 # Riccardo Capanna
 
-Hi, I'm Riccardo. I study Digital Marketing (bachelor's degree, class L-20, and
-24ORE Business School) and I am looking for my first role: an internship or a
-junior position in CRM, marketing automation or digital marketing.
+**Marketing Automation, CRM & Martech Operations** (Digital Marketing BSc, L-20 · 24ORE Business School).
 
-I have no work experience yet. What I have is practice. I like understanding
-how customer data and automated flows help a team decide who to talk to, when,
-and with which message. These three projects are how I practise that.
+I design operational bridges between the tools modern marketing and CRM teams already pay for — covering the gaps where platforms don't talk to each other and where margin, deliverability, or ad spend quietly leak.
 
-Each one has a page where you can load your own CSV exports and get the
-result in the browser; the example files are there only to show what the
-output looks like. Nothing is uploaded: the code runs on your computer.
+Every project below is a **Day-1 usable tool**: load your own unmodified CSV exports from **Shopify**, **Klaviyo**, **HubSpot**, **Meta Business**, **GA4**, **Trustpilot**, or **Zendesk**, run it locally in your browser (Pyodide — zero server upload) or via CLI, and download ready-to-import operational CSVs or warehouse SQL models.
 
-## Start here
+---
 
-| If you are hiring for | Open this project | The business question |
+## Operational Martech Toolkit
+
+| Operational Gap Covered | Tool & Live Browser Workbench | Immediate Operational Output |
 | --- | --- | --- |
-| CRM / Marketing Automation | [Lifecycle Automation Lab](https://github.com/errer441122/lifecycle-automation-lab) · [try it with your files](https://errer441122.github.io/lifecycle-automation-lab/) | Which customer gets which email, and when? Is every template safe to send, and can every subscriber's consent be proven? |
-| Performance / Digital Marketing | [CRM retention practice](https://github.com/errer441122/digital-campaign-performance-dashboard) · [live page](https://errer441122.github.io/digital-campaign-performance-dashboard/) · [try it with your files](https://errer441122.github.io/digital-campaign-performance-dashboard/app.html) | Which customers bring the revenue, who is about to leave, and what should each group receive? |
-| Customer Experience / Insights | [E-commerce CX Analytics](https://github.com/errer441122/ecommerce-cx-analytics) · [try it with your files](https://errer441122.github.io/ecommerce-cx-analytics/) | Why do customers leave bad reviews, and where should the team act first? |
+| **ESP → Pre-Send QA & VIP Margin Protection** | **[ESP Pre-Flight QA, VIP Margin Guard & GDPR Gate](https://github.com/errer441122/lifecycle-automation-lab)** · [Open in browser](https://errer441122.github.io/lifecycle-automation-lab/) | PASS/FAIL template QA (Klaviyo Liquid & HubSpot HubL, required GA4 UTMs, mobile truncation, Gmail clipping), **VIP Discount Exclusion CSV**, **GDPR Double Opt-In Suppression CSV**, and Klaviyo/HubSpot lifecycle sync |
+| **Ads → CRM Consent & 2nd-Order Economics** | **[Ads-to-CRM Revenue, Consent & Repeat Reconciler](https://github.com/errer441122/digital-campaign-performance-dashboard)** · [Open in browser](https://errer441122.github.io/digital-campaign-performance-dashboard/) | Campaign budget actions (`SCALE` / `FIX_DOI_LEAK` / `FIX_RETENTION` / `PAUSE_WASTE`), **SHA-256 Meta Custom Audience Seeds & Exclusions**, unconfirmed paid-lead audit, BI star-schema CSV, and **BigQuery / Snowflake / Databricks SQL** |
+| **Shipments / Reviews / Tickets → CRM Promo Hold** | **[CX-to-CRM Promo Guard & Proactive Recovery Engine](https://github.com/errer441122/ecommerce-cx-analytics)** · [Open in browser](https://errer441122.github.io/ecommerce-cx-analytics/) | **Klaviyo & HubSpot Global Promo Hold / Release CSVs** (`cx_promo_hold=true/false`), deduplicated LTV-weighted Customer Care queue (`P0`–`P3`), and BI-ready **Carrier SLA Scorecard** |
 
-## The projects in short
+---
 
-### [Lifecycle Automation Lab](https://github.com/errer441122/lifecycle-automation-lab)
+## Day-1 Native Platform Export Support
 
-Three email flows in Klaviyo on a Shopify test store (welcome with double
-opt-in, abandoned cart, win-back), plus three tools that run on the files any
-Shopify + Klaviyo team already has:
+| Ecosystem | Supported Platforms & Exports |
+| --- | --- |
+| **E-commerce, ESP & CRM** | **Shopify** (*Orders > Export*, *Customers > Export*), **Klaviyo** (*Lists & Segments CSV*, Liquid HTML, Bulk Import API), **HubSpot** (*Contacts*, *Deals*, *Service Hub Tickets*, HubL HTML) |
+| **Advertising** | **Meta Business** (*Ads Manager CSV*, *Lead Center / Instant Forms UTF-16/CSV*, SHA-256 Custom & Exclusion Audiences) |
+| **Web & Product Analytics** | **GA4** (*Traffic / User Acquisition CSV* & UTM taxonomy cross-check), adapter support for **Amplitude**, **Mixpanel**, and **Adobe Analytics** |
+| **Post-Purchase CX & Helpdesk** | **Trustpilot Business**, **Judge.me / Yotpo**, **Zendesk Support**, **AfterShip / Sendcloud / ShippyPro / Qapla'** |
+| **Data Warehouse & BI** | **Google BigQuery**, **Snowflake**, **Databricks Delta** (portable SQL models) · BI-ready flat/star-schema exports for **Power BI**, **Tableau**, and **Looker** · B2B pipeline reconciliation modeled on **Dreamdata / HockeyStack** |
 
-- **Pre-send check** for email templates: a greeting that reads "Ciao ,", dead
-  links, broken UTMs, a missing unsubscribe link, a subject cut off on a phone.
-  Its first run found a problem in all seven of my live emails.
-- **Lifecycle sync** from a Shopify orders export to Klaviyo, only for people
-  whose consent has a recorded source and date. Everyone else goes to a
-  suppression list, with the reason.
-- **Second-order timing**: how many customers buy again by day 30, 60, 90, 180
-  and 365, which sets the delay of the post-purchase email.
+---
 
-The store has no real customers, so there are no sales results. What I learned
-came from running the flows:
+## Core Design Principles
 
-- Smart Sending silently skipped the first abandoned-cart email, because a
-  welcome email had gone out a few hours earlier.
-- A sign-up through Shopify's newsletter checkbox entered the list without
-  confirmation, even though the list was set to double opt-in.
+1. **Actionable operational metrics, not academic exercises.** No public toy datasets (no UCI, no Olist) and no retrospective statistical models that teams never act on. Every calculation produces a concrete list, exclusion segment, budget tag, or blocking QA check.
+2. **Protect margin, deliverability, and ad spend.** Stop sending promo codes to VIP full-price buyers, stop mailing unconfirmed single opt-in leaks or 365-day unengaged contacts (<0.3% Google/Yahoo complaint rule), stop scaling campaigns on vanity CPL, and stop sending DEM blasts to customers waiting on a stuck parcel or an open support ticket.
+3. **Privacy-first by architecture.** All browser apps execute pure Python locally via Pyodide — customer emails and order exports never leave the user's machine, and every CSV export neutralizes spreadsheet formula injection.
 
-### [CRM retention practice](https://github.com/errer441122/digital-campaign-performance-dashboard)
+---
 
-RFM segmentation, lifecycle stages and repeat purchases on a public dataset of
-5,878 customers of a UK online shop. The main finding: 26% of customers bring
-71% of revenue, and 588 customers are in the window where a win-back still
-makes sense. Of the customers with a full year of data, half of those who came
-back did so within 71 days. The dataset has no advertising data, so this is
-about customers, not campaigns.
+## Transparency on Scope & Build Approach
 
-The same report runs on any store's Shopify orders export: the page, plus a
-customer list with the segment, lifecycle stage and action for each person.
-On the 36,969 real orders of the dataset it reproduces every published number
-exactly.
+- **Schema fixtures vs. client data:** The small CSV files inside each repository's `fixtures/` folder use synthetic `example.com` addresses solely to verify native platform parsers, edge cases (Excel semicolons, UTF-16 Meta exports, decimal commas), and automated CI test suites. None of the repositories claim fake campaign performance or client case studies.
+- **Hands-on platform QA:** Real DNS authentication (DKIM/DMARC), Klaviyo flow testing, and platform edge cases discovered in a live Klaviyo + Shopify sandbox (Smart Sending suppressing abandoned-cart sends, Shopify checkout checkboxes bypassing Double Opt-In, DNS wildcard false positives) are documented in [`lifecycle-automation-lab/docs/field-notes/`](https://github.com/errer441122/lifecycle-automation-lab/tree/main/docs/field-notes).
+- **AI-assisted workflow:** My domain role covers Martech architecture, platform data schemas, GDPR/deliverability governance rules, business logic, and QA validation; I leverage AI coding assistants to accelerate Python/SQL implementation and automated test coverage.
 
-### [E-commerce CX Analytics](https://github.com/errer441122/ecommerce-cx-analytics)
-
-About 95,000 customer reviews from a public Brazilian marketplace dataset. The
-main finding: when an order arrives on time, 83% of customers are satisfied;
-when it arrives late, 27% are.
-
-Two tools turn that into a daily routine on a store's own exports: the list of
-late orders not delivered yet (to contact first and to keep out of promotions),
-with the late rate by carrier, and a triage of 1-2 star reviews by urgency and
-by the team that should handle them. On the real Olist comments the triage
-queues 9,191 reviews and finds 2,080 orders that never arrived.
-
-## What I work with
-
-- **Klaviyo**: flows, segments, double opt-in lists, sending-domain setup.
-- **Shopify**: store setup, products, test orders, the Klaviyo integration.
-- **Marketing and CRM metrics**: RFM segmentation, cohort retention, conversion
-  and satisfaction rates, consent management (double opt-in, GDPR).
-- **Excel** for tables and summaries.
-
-## What these projects are, honestly
-
-- The Klaviyo account, the Shopify store and the sending domain are real, but
-  the store is a test store. There are no real customers and no sales.
-- The two analysis projects use public datasets that many people practise on.
-  Their tools run on a store's own exports, but have not been used on a real
-  client's data yet.
-- None of this is client work.
-- I am not a developer. The code in these repositories was written mostly by
-  AI coding assistants. My part was choosing the questions and the data,
-  setting up and running the accounts, checking the results and deciding what
-  to report, including what did not work.
+---
 
 ## Contact
 
