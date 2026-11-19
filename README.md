@@ -1,6 +1,6 @@
 # Riccardo Capanna
 
-**Marketing Automation, CRM & Martech Operations** (Digital Marketing BSc, L-20 · 24ORE Business School).
+**Marketing Automation, CRM & Martech Operations** (Digital Marketing BSc · 24ORE Business School).
 
 I design operational bridges between the tools modern marketing and CRM teams already pay for — covering the gaps where platforms don't talk to each other and where margin, deliverability, or ad spend quietly leak.
 
