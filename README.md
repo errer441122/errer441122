@@ -1,48 +1,36 @@
 # Riccardo Capanna
 
-**Marketing Automation, CRM & Martech Operations** (Digital Marketing BSc · 24ORE Business School).
+Digital Marketing background (Digital Marketing BSc · 24ORE Business School) focused on **AI Search Visibility (GEO / AEO), AI Workflow Automation, Marketing & Revenue Operations, and CRM Governance**.
 
-I design operational bridges between the tools modern marketing and CRM teams already pay for — covering the gaps where platforms don't talk to each other and where margin, deliverability, or ad spend quietly leak.
-
-Every project below is a **Day-1 usable tool**: load your own unmodified CSV exports from **Shopify**, **Klaviyo**, **HubSpot**, **Meta Business**, **GA4**, **Trustpilot**, or **Zendesk**, run it locally in your browser (Pyodide — zero server upload) or via CLI, and download ready-to-import operational CSVs or warehouse SQL models.
+My work centers on the operational gaps where modern marketing stacks quietly lose visibility, pipeline speed, margin, or deliverability — designed as visual workflows (**n8n**), structured AI prompts with human-in-the-loop guardrails, platform governance matrices, and verifiable real-brand audits.
 
 ---
 
-## Operational Martech Toolkit
+## Featured Systems & Case Studies
 
-| Operational Gap Covered | Tool & Live Browser Workbench | Immediate Operational Output |
+| Focus Area | Project & Live Showcase | What It Solves |
 | --- | --- | --- |
-| **ESP → Pre-Send QA & VIP Margin Protection** | **[ESP Pre-Flight QA, VIP Margin Guard & GDPR Gate](https://github.com/errer441122/lifecycle-automation-lab)** · [Open in browser](https://errer441122.github.io/lifecycle-automation-lab/) | PASS/FAIL template QA (Klaviyo Liquid & HubSpot HubL, required GA4 UTMs, mobile truncation, Gmail clipping), **VIP Discount Exclusion CSV**, **GDPR Double Opt-In Suppression CSV**, and Klaviyo/HubSpot lifecycle sync |
-| **Ads → CRM Consent & 2nd-Order Economics** | **[Ads-to-CRM Revenue, Consent & Repeat Reconciler](https://github.com/errer441122/digital-campaign-performance-dashboard)** · [Open in browser](https://errer441122.github.io/digital-campaign-performance-dashboard/) | Campaign budget actions (`SCALE` / `FIX_DOI_LEAK` / `FIX_RETENTION` / `PAUSE_WASTE`), **SHA-256 Meta Custom Audience Seeds & Exclusions**, unconfirmed paid-lead audit, BI star-schema CSV, and **BigQuery / Snowflake / Databricks SQL** |
-| **Shipments / Reviews / Tickets → CRM Promo Hold** | **[CX-to-CRM Promo Guard & Proactive Recovery Engine](https://github.com/errer441122/ecommerce-cx-analytics)** · [Open in browser](https://errer441122.github.io/ecommerce-cx-analytics/) | **Klaviyo & HubSpot Global Promo Hold / Release CSVs** (`cx_promo_hold=true/false`), deduplicated LTV-weighted Customer Care queue (`P0`–`P3`), and BI-ready **Carrier SLA Scorecard** |
+| **AI Search Visibility (GEO / AEO)** | **[AI Visibility Audit — Methodology & Real-Brand Showcase](https://github.com/errer441122/ai-visibility-audit-geo)** · [Live showcase](https://errer441122.github.io/ai-visibility-audit-geo/) | Variance-aware multi-engine GEO auditing (**Gemini, OpenAI GPT, Perplexity, Claude**), Source Gap mapping, GA4/Search Console & 19-bot server-log crawler tracking. Includes a **live Notion audit readout** and a **live-verified 5-brand AI crawler `robots.txt` benchmark** *(application source code kept private)* |
+| **Inbound Lead Routing & CRM Hygiene** | **[AI Inbound Lead Enrichment, ICP Scoring & HubSpot Routing](https://github.com/errer441122/ai-inbound-lead-router)** · [Interactive walkthrough](https://errer441122.github.io/ai-inbound-lead-router/) | 15-node importable **n8n** workflow turning raw inbound form fills into clean, deduplicated, UTM-attributed **HubSpot** records & instant Tier 1 Slack alerts — with free-email filtering, a **Field Ownership Matrix**, an **AI confidence ≥80% human-review gate**, and a 30-case European benchmark |
+| **Post-Purchase CX → CRM Automation** | **[CX-to-CRM AI Promo Guard & Proactive Recovery](https://github.com/errer441122/ecommerce-cx-analytics)** · [Interactive walkthrough](https://errer441122.github.io/ecommerce-cx-analytics/) | Two importable **n8n** blueprints pausing **Klaviyo / HubSpot** promos & review requests for customers with stuck parcels, 1–2★ Trustpilot reviews, or open Zendesk tickets — adding human-in-the-loop **Zendesk internal draft notes**, VIP `P0` Slack escalation, and automatic daily post-cooldown release |
+| **CRM Governance, Deliverability & Margin** | **[CRM Governance, Deliverability, VIP Margin Rules & AI Pre-Send QA](https://github.com/errer441122/lifecycle-automation-lab)** · [Live showcase](https://errer441122.github.io/lifecycle-automation-lab/) | Four real failure modes caught hands-on in **Klaviyo, Shopify & Cloudflare DNS** (Smart Sending cart collision, Shopify checkbox bypassing Double Opt-In, Afternic wildcard DNS trap, unsupported copy promises) turned into a **VIP Margin Protection Matrix**, 1-page Pre-Send SOP, and an **n8n AI Copy-vs-Policy QA gate** |
 
 ---
 
-## Day-1 Native Platform Export Support
+## Platforms & Operational Toolkit
 
-| Ecosystem | Supported Platforms & Exports |
-| --- | --- |
-| **E-commerce, ESP & CRM** | **Shopify** (*Orders > Export*, *Customers > Export*), **Klaviyo** (*Lists & Segments CSV*, Liquid HTML, Bulk Import API), **HubSpot** (*Contacts*, *Deals*, *Service Hub Tickets*, HubL HTML) |
-| **Advertising** | **Meta Business** (*Ads Manager CSV*, *Lead Center / Instant Forms UTF-16/CSV*, SHA-256 Custom & Exclusion Audiences) |
-| **Web & Product Analytics** | **GA4** (*Traffic / User Acquisition CSV* & UTM taxonomy cross-check), adapter support for **Amplitude**, **Mixpanel**, and **Adobe Analytics** |
-| **Post-Purchase CX & Helpdesk** | **Trustpilot Business**, **Judge.me / Yotpo**, **Zendesk Support**, **AfterShip / Sendcloud / ShippyPro / Qapla'** |
-| **Data Warehouse & BI** | **Google BigQuery**, **Snowflake**, **Databricks Delta** (portable SQL models) · BI-ready flat/star-schema exports for **Power BI**, **Tableau**, and **Looker** · B2B pipeline reconciliation modeled on **Dreamdata / HockeyStack** |
+- **Workflow Automation & AI Ops:** n8n (importable JSON blueprints, error-trigger observability, webhook orchestration), Structured LLM Prompts & JSON Output Contracts, Human-in-the-Loop confidence gates
+- **CRM, ESP & E-commerce:** HubSpot (Contacts, Properties, Field Ownership, First/Last-Touch UTMs), Klaviyo (Flows, Double Opt-In, Smart Sending, Global Exclusion Segments), Shopify, DNS Authentication (SPF, DKIM, DMARC)
+- **AI Search (GEO / AEO) & Analytics:** Multi-engine AI visibility auditing (ChatGPT, Gemini, Perplexity, Claude), `robots.txt` AI-crawler governance, Source Gap & Digital PR mapping, GA4, Google Search Console, server-log crawler analysis
+- **Post-Purchase & Operations:** Zendesk, Trustpilot, AfterShip / Sendcloud, Slack alerting, SOP & Playbook design
 
 ---
 
-## Core Design Principles
+## Operating Principles
 
-1. **Actionable operational metrics, not academic exercises.** No public toy datasets (no UCI, no Olist) and no retrospective statistical models that teams never act on. Every calculation produces a concrete list, exclusion segment, budget tag, or blocking QA check.
-2. **Protect margin, deliverability, and ad spend.** Stop sending promo codes to VIP full-price buyers, stop mailing unconfirmed single opt-in leaks or 365-day unengaged contacts (<0.3% Google/Yahoo complaint rule), stop scaling campaigns on vanity CPL, and stop sending DEM blasts to customers waiting on a stuck parcel or an open support ticket.
-3. **Privacy-first by architecture.** All browser apps execute pure Python locally via Pyodide — customer emails and order exports never leave the user's machine, and every CSV export neutralizes spreadsheet formula injection.
-
----
-
-## Transparency on Scope & Build Approach
-
-- **Schema fixtures vs. client data:** The small CSV files inside each repository's `fixtures/` folder use synthetic `example.com` addresses solely to verify native platform parsers, edge cases (Excel semicolons, UTF-16 Meta exports, decimal commas), and automated CI test suites. None of the repositories claim fake campaign performance or client case studies.
-- **Hands-on platform QA:** Real DNS authentication (DKIM/DMARC), Klaviyo flow testing, and platform edge cases discovered in a live Klaviyo + Shopify sandbox (Smart Sending suppressing abandoned-cart sends, Shopify checkout checkboxes bypassing Double Opt-In, DNS wildcard false positives) are documented in [`lifecycle-automation-lab/docs/field-notes/`](https://github.com/errer441122/lifecycle-automation-lab/tree/main/docs/field-notes).
-- **AI-assisted workflow:** My domain role covers Martech architecture, platform data schemas, GDPR/deliverability governance rules, business logic, and QA validation; I leverage AI coding assistants to accelerate Python/SQL implementation and automated test coverage.
+1. **Design for failure, not just the happy path.** Every workflow explicitly handles personal email noise, CRM duplicates, unreachable websites, low AI confidence (<80%), unverified GDPR consent, and API outages.
+2. **Human-in-the-loop where brand trust is on the line.** AI classifies, scores, checks policy consistency, and drafts internal notes — it never emails angry customers or unverified leads autonomously.
+3. **Methodological honesty over vanity metrics.** No synthetic case studies, no toy public datasets, and explicit disclosure of measurement boundaries (API vs. consumer chat UI, GA4 AI referral floors, sandbox flow testing vs. live traffic).
 
 ---
 
