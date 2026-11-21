@@ -2,17 +2,17 @@
 
 Digital Marketing background (Digital Marketing BSc · 24ORE Business School) focused on **AI Search Visibility (GEO / AEO), AI Workflow Automation, Marketing & Revenue Operations, and CRM Governance**.
 
-My work centers on the operational gaps where modern marketing stacks quietly lose visibility, pipeline speed, or deliverability — designed as visual workflows (**n8n**), structured AI prompts with human-in-the-loop guardrails, platform governance matrices, and verifiable real-brand audits.
+My work centers on the operational gaps where marketing stacks quietly lose visibility, pipeline speed, or deliverability. I build the fixes as **n8n** workflows, with fixed rules in code, AI only where judgment is needed, and audits on real brands.
 
 ---
 
 ## Featured Systems & Case Studies
 
-| Focus Area | Project & Live Showcase | What It Solves |
+| Focus | Project | What it solves |
 | --- | --- | --- |
-| **AI Search Visibility (GEO / AEO)** | **[AI Visibility Audit — Methodology & Real-Brand Showcase](https://github.com/errer441122/ai-visibility-audit-geo)** · [Live showcase](https://errer441122.github.io/ai-visibility-audit-geo/) | Variance-aware multi-engine GEO auditing (**Gemini, OpenAI GPT, Perplexity, Claude**), Source Gap mapping, GA4/Search Console & 19-bot server-log crawler tracking. Includes a **live Notion audit readout** and a **live-verified 5-brand AI crawler `robots.txt` benchmark** *(application source code kept private)* |
-| **Inbound Lead Routing & CRM Hygiene** | **[AI Inbound Lead Enrichment, ICP Scoring & HubSpot Routing](https://github.com/errer441122/ai-inbound-lead-router)** · [Interactive walkthrough](https://errer441122.github.io/ai-inbound-lead-router/) | Importable **n8n** workflow turning raw inbound form fills into clean, deduplicated, UTM-attributed **HubSpot** records & instant Tier 1 Slack alerts. It leaves contacts Sales already owns alone, filters free emails before any AI call, and adds a **Field Ownership Matrix**, an **AI confidence ≥80% human-review gate**, and 30 test cases (real domains, invented messages) |
-| **Email Deliverability & Sender Authentication** | **[Sender Domain Health: SPF, DKIM & DMARC Check and Monitor](https://github.com/errer441122/sender-domain-health)** · [Live checker](https://errer441122.github.io/sender-domain-health/) | **n8n** workflow that reads SPF, DKIM, DMARC and MX from public DNS, grades them with fixed rules, and alerts only when a domain gets worse or its records change. Run for real on 23 domains: of 20 Italian B2B companies, 7 leave DMARC in monitoring mode and 5 are at or past the SPF lookup limit. The live page checks any domain with the workflow's own nodes. It grew out of a hands-on **Klaviyo, Shopify & Cloudflare DNS** setup, where a dashboard showed "Verified" for a record that did not exist |
+| **AI search visibility (GEO / AEO)** | **[AI Visibility Audit](https://github.com/errer441122/ai-visibility-audit-geo)** · [live page](https://errer441122.github.io/ai-visibility-audit-geo/) | How often Gemini, GPT, Perplexity and Claude recommend a brand, and which sources they cite. Real audit: Notion on 3 engines. |
+| **Lead routing & CRM hygiene** | **[AI Lead Router](https://github.com/errer441122/ai-inbound-lead-router)** · [live page](https://errer441122.github.io/ai-inbound-lead-router/) | Scores inbound leads with AI and routes them in HubSpot without overwriting Sales data or the first campaign. |
+| **Email deliverability** | **[Sender Domain Health](https://github.com/errer441122/sender-domain-health)** · [live page](https://errer441122.github.io/sender-domain-health/) | Checks SPF, DKIM and DMARC from public DNS and alerts on change. 7 of 20 Italian B2B companies only monitor DMARC. |
 
 ---
 
