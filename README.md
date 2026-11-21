@@ -13,6 +13,7 @@ My work centers on the operational gaps where marketing stacks quietly lose visi
 | **AI search visibility (GEO / AEO)** | **[AI Visibility Audit](https://github.com/errer441122/ai-visibility-audit-geo)** · [live page](https://errer441122.github.io/ai-visibility-audit-geo/) | How often Gemini, GPT, Perplexity and Claude recommend a brand, and which sources they cite. Real audit: Notion on 3 engines. |
 | **Lead routing & CRM hygiene** | **[AI Lead Router](https://github.com/errer441122/ai-inbound-lead-router)** · [live page](https://errer441122.github.io/ai-inbound-lead-router/) | Scores inbound leads with AI and routes them in HubSpot without overwriting Sales data or the first campaign. |
 | **Email deliverability** | **[Sender Domain Health](https://github.com/errer441122/sender-domain-health)** · [live page](https://errer441122.github.io/sender-domain-health/) | Checks SPF, DKIM and DMARC from public DNS and alerts on change. 7 of 20 Italian B2B companies only monitor DMARC. |
+| **Lifecycle email (Klaviyo)** | **[Klaviyo Lifecycle Lab](https://github.com/errer441122/klaviyo-lifecycle-lab)** · [live page](https://errer441122.github.io/klaviyo-lifecycle-lab/) | Welcome with double opt-in, abandoned cart and win-back sent for real on a Shopify dev store, with a consent-gated lifecycle sync. One subscriber, no sales: it proves the mechanism, not results. |
 
 ---
 
@@ -35,7 +36,6 @@ My work centers on the operational gaps where marketing stacks quietly lose visi
 
 ## Earlier Projects
 
-- **Lifecycle Automation Lab** (Klaviyo & Shopify): three live flows, consent and deliverability on a real account. [Field notes](https://github.com/errer441122/sender-domain-health/tree/main/docs/field-notes) · [original version](https://github.com/errer441122/sender-domain-health/tree/klaviyo-lab)
 - **Digital Campaign Performance Dashboard** (CRM retention practice): RFM segments, cohorts and lifecycle stages on 5,878 customers of a real UK online retailer (public UCI Online Retail II data). [Project snapshot](https://github.com/errer441122/ai-inbound-lead-router/tree/rfm-dashboard)
 
 ---
