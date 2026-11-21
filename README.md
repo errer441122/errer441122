@@ -33,6 +33,13 @@ My work centers on the operational gaps where marketing stacks quietly lose visi
 
 ---
 
+## Earlier Projects
+
+- **Lifecycle Automation Lab** (Klaviyo & Shopify): three live flows, consent and deliverability on a real account. [Field notes](https://github.com/errer441122/sender-domain-health/tree/main/docs/field-notes) · [original version](https://github.com/errer441122/sender-domain-health/tree/klaviyo-lab)
+- **Digital Campaign Performance Dashboard** (CRM retention practice): RFM segments, cohorts and lifecycle stages on 5,878 customers of a real UK online retailer (public UCI Online Retail II data). [Project snapshot](https://github.com/errer441122/ai-inbound-lead-router/tree/rfm-dashboard)
+
+---
+
 ## Contact
 
 [LinkedIn](https://www.linkedin.com/in/riccardo-capanna-039a43415/)
