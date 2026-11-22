@@ -2,7 +2,7 @@
 
 Digital Marketing background (Digital Marketing BSc · 24ORE Business School) focused on **AI Search Visibility (GEO / AEO), AI Workflow Automation, Marketing & Revenue Operations, and CRM Governance**.
 
-My work centers on the operational gaps where marketing stacks quietly lose visibility, pipeline speed, or deliverability. I build the fixes as **n8n** workflows, with fixed rules in code, AI only where judgment is needed, and audits on real brands.
+My work centers on the operational gaps where marketing stacks quietly lose visibility, pipeline speed, or deliverability. I use **Excel** for event coordination and **n8n** for workflow automation, with fixed rules in code, AI where judgment is needed, and audits on real brands.
 
 ---
 
@@ -10,6 +10,7 @@ My work centers on the operational gaps where marketing stacks quietly lose visi
 
 | Focus | Project | What it solves |
 | --- | --- | --- |
+| **B2B event operations** | **[Stand appointments & event follow-up](https://github.com/errer441122/eventi-b2b-agenda-e-follow-up)** | Two simulated Excel cases: reschedule a group without losing its original booking, then show who still needs an update. After a webinar, send demo requests to Sales and requests for slides to the events team. |
 | **AI search visibility (GEO / AEO)** | **[AI Visibility Audit](https://github.com/errer441122/ai-visibility-audit-geo)** · [live page](https://errer441122.github.io/ai-visibility-audit-geo/) | How often Gemini, GPT, Perplexity and Claude recommend a brand, and which sources they cite. Real audit: Notion on 3 engines. |
 | **Lead routing & CRM hygiene** | **[AI Lead Router](https://github.com/errer441122/ai-inbound-lead-router)** · [live page](https://errer441122.github.io/ai-inbound-lead-router/) | Scores inbound leads with AI and routes them in HubSpot without overwriting Sales data or the first campaign. |
 | **Email deliverability** | **[Sender Domain Health](https://github.com/errer441122/sender-domain-health)** · [live page](https://errer441122.github.io/sender-domain-health/) | Checks SPF, DKIM and DMARC from public DNS and alerts on change. 7 of 20 Italian B2B companies only monitor DMARC. |
