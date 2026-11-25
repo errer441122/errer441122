@@ -1,8 +1,8 @@
 # Riccardo Capanna
 
-Digital Marketing background (Digital Marketing BSc · 24ORE Business School) focused on **AI Search Visibility (GEO / AEO), AI Workflow Automation, Marketing & Revenue Operations, and CRM Governance**.
+Digital Marketing background (Digital Marketing BSc · 24ORE Business School) focused on **Marketing & Revenue Operations, CRM Governance, AI Workflow Automation (n8n), and AI Search Visibility (GEO / AEO)**.
 
-My work centers on the operational gaps where marketing stacks quietly lose visibility, pipeline speed, or deliverability. I use **Excel** for event coordination and **n8n** for workflow automation, with fixed rules in code, AI where judgment is needed, and audits on real brands.
+My work centers on the operational gaps between tools where B2B teams quietly lose attribution, deliverability, consent compliance, or pipeline speed. I use **Excel** (macro-free) for reconciliation and event operations, and **n8n** for workflow automation — fixed rules in code first, AI only where reading unstructured text adds value, and real audits whenever public data is available.
 
 ---
 
@@ -10,34 +10,37 @@ My work centers on the operational gaps where marketing stacks quietly lose visi
 
 | Focus | Project | What it solves |
 | --- | --- | --- |
-| **AI search visibility (GEO / AEO)** | **[AI Visibility Audit](https://github.com/errer441122/ai-visibility-audit-geo)** · [live page](https://errer441122.github.io/ai-visibility-audit-geo/) | How often Gemini, GPT, Perplexity and Claude recommend a brand, and which sources they cite. Real audit: Notion on 3 engines. |
-| **Lead routing & CRM hygiene** | **[AI Lead Router](https://github.com/errer441122/ai-inbound-lead-router)** · [live page](https://errer441122.github.io/ai-inbound-lead-router/) | Scores inbound leads with AI and routes them in HubSpot without overwriting Sales data or the first campaign. |
-| **Email deliverability** | **[Sender Domain Health](https://github.com/errer441122/sender-domain-health)** · [live page](https://errer441122.github.io/sender-domain-health/) | Checks SPF, DKIM and DMARC from public DNS and alerts on change. 7 of 20 Italian B2B companies only monitor DMARC. |
-| **Lifecycle email (Klaviyo)** | **[Klaviyo Lifecycle Lab](https://github.com/errer441122/klaviyo-lifecycle-lab)** · [live page](https://errer441122.github.io/klaviyo-lifecycle-lab/) | Welcome with double opt-in, abandoned cart and win-back sent for real on a Shopify dev store, with a consent-gated lifecycle sync. One subscriber, no sales: it proves the mechanism, not results. |
-| **B2B event operations** | **[Stand appointments & event follow-up](https://github.com/errer441122/eventi-b2b-agenda-e-follow-up)** | Two simulated Excel cases: reschedule a group without losing its original booking, then show who still needs an update. After a trade show or in-house event, send demo requests to Sales and requests for slides to the events team. |
+| **Email deliverability** | **[Sender Domain Health](https://github.com/errer441122/sender-domain-health)** · [live page](https://errer441122.github.io/sender-domain-health/) | Checks SPF, DKIM and DMARC from public DNS and alerts on change. No AI. Executed on 23 real domains (7 of 20 Italian B2B companies only monitor DMARC). |
+| **B2B pre-send gate** | **[B2B Pre-Send Hold & Triage](https://github.com/errer441122/ecommerce-cx-analytics)** · [live page](https://errer441122.github.io/ecommerce-cx-analytics/) | Cross-checks recipients, consents, support tickets and ERP orders before a B2B send; holds the whole company by VAT/domain. AI reads only uncategorised tickets and can hold, never pass. 48 dirty cases + 48,000 random checks, run in n8n 2.48.7. *(IT · EN summary)* |
+| **Campaign-to-order attribution** | **[Campaign-to-Order Reconciliation](https://github.com/errer441122/digital-campaign-performance-dashboard)** · [live page](https://errer441122.github.io/digital-campaign-performance-dashboard/) | Macro-free Excel workbook matching campaign leads, CRM contacts and ERP orders with 8 fixed rules (VAT/domain matching, credit notes, existing vs. new accounts, 180-day window) and routing edge cases to named owners. 60 dirty cases, 368 checks. *(IT · EN summary)* |
+| **AI search visibility (GEO / AEO)** | **[AI Visibility Audit](https://github.com/errer441122/ai-visibility-audit-geo)** · [live page](https://errer441122.github.io/ai-visibility-audit-geo/) | Measures how often Gemini, GPT, Perplexity and Claude recommend a brand and which sources they cite. Real audit: Notion across 3 engines + 5-brand `robots.txt` benchmark. |
+| **Lead routing & CRM hygiene** | **[AI Lead Router](https://github.com/errer441122/ai-inbound-lead-router)** · [live page](https://errer441122.github.io/ai-inbound-lead-router/) | Scores inbound leads with AI and routes them in HubSpot without overwriting Sales-owned records or first-touch campaign UTMs. 30 test cases. |
+| **B2B event operations** | **[Stand Appointments & Event Follow-Up](https://github.com/errer441122/eventi-b2b-agenda-e-follow-up)** | Two macro-free Excel tools for trade shows and open days: reschedule booth visits without losing the original booking, track pending notifications, and split post-event leads across Sales, Events, Review and Excluded. *(IT · EN summary)* |
+| **Lifecycle email (Klaviyo)** | **[Klaviyo Lifecycle Lab](https://github.com/errer441122/klaviyo-lifecycle-lab)** · [live page](https://errer441122.github.io/klaviyo-lifecycle-lab/) | Welcome (double opt-in), abandoned cart and win-back flows sent for real on a Shopify dev store, plus browser-runnable pre-send, consent-gated lifecycle sync and repeat-timing tools. One test subscriber, no sales: proves the mechanism, not commercial results. |
 
 ---
 
 ## Platforms & Operational Toolkit
 
-- **Workflow Automation & AI Ops:** n8n (importable JSON blueprints, error-trigger observability, webhook orchestration), Structured LLM Prompts & JSON Output Contracts, Human-in-the-Loop confidence gates
-- **CRM, ESP & E-commerce:** HubSpot (Contacts, Properties, Field Ownership, First/Last-Touch UTMs), Klaviyo (Flows, Double Opt-In, Smart Sending, Segments), Shopify, DNS Authentication (SPF, DKIM, DMARC)
-- **AI Search (GEO / AEO) & Analytics:** Multi-engine AI visibility auditing (ChatGPT, Gemini, Perplexity, Claude), `robots.txt` AI-crawler governance, Source Gap & Digital PR mapping, GA4, Google Search Console, server-log crawler analysis
-- **Operations:** Slack alerting, n8n error workflows, SOP & Playbook design
+- **Workflow Automation & AI Ops:** n8n (importable JSON workflows, error-trigger observability, webhook & form orchestration), Structured LLM Prompts & JSON Output Contracts, Human-in-the-Loop gates (AI holds or drafts, never auto-sends)
+- **CRM, Attribution & Deliverability:** HubSpot (Contacts, Properties, Field Ownership, First/Last-Touch UTMs), B2B Campaign-to-ERP Reconciliation (Excel, no macros), GDPR Consent & Suppression Logic, DNS Authentication (SPF, DKIM, DMARC), Klaviyo & Shopify
+- **AI Search (GEO / AEO) & Analytics:** Multi-engine AI visibility auditing (ChatGPT, Gemini, Perplexity, Claude), `robots.txt` AI-crawler governance, Source Gap & Digital PR mapping, GA4, Google Search Console
+- **Operations:** Slack alerting, n8n error workflows, Trade-Show & Event Desk Operations, SOP & Playbook design
 
 ---
 
 ## Operating Principles
 
-1. **Design for failure, not just the happy path.** The workflows give each failure its own route: personal emails, duplicate contacts, records Sales already owns, unreachable websites, low AI confidence (<80%), and API errors.
-2. **Code for rules, AI for judgment, people for the final word.** Fixed checks run as plain code; the AI classifies, scores and drafts an opener for a rep to review. It never emails a lead on its own.
-3. **Say what is real and what is a test.** Real: the Klaviyo, Shopify and DNS field notes, the live GEO audits, and the sender-domain check run on 23 real domains. Tests: the lead router runs on example payloads until a company uses it. Each repo states its limits (sample sizes, API vs. consumer chat UI, sandbox vs. live traffic).
+1. **Design for dirty data and failure, not the happy path.** Every system handles broken dates, duplicates, VAT/domain mismatches, conflicting consents across tools, Sales-owned records, unreachable websites, low AI confidence, and missing exports.
+2. **Fixed rules first, AI only for judgment, humans for the final call.** Deterministic checks run in Excel formulas or plain code; AI reads unstructured text only where fixed rules stop, and can never auto-approve an email send or overwrite Sales data.
+3. **Say clearly what is real and what is simulated.** Real: live DNS checks on 23 real domains, live GEO audits, and Klaviyo/Shopify/DNS field notes. Simulated (and explicitly labelled): the B2B attribution (60 dirty cases / 368 checks), B2B pre-send gate (48 dirty cases / 48,000 random runs), lead router (30 cases), and event workbooks. Every repo states its limits.
 
 ---
 
-## Earlier Projects
+## Reference Analyses on Public Datasets
 
-- **Digital Campaign Performance Dashboard** (CRM retention practice): RFM segments, cohorts and lifecycle stages on 5,878 customers of a real UK online retailer (public UCI Online Retail II data). [Project snapshot](https://github.com/errer441122/ai-inbound-lead-router/tree/rfm-dashboard)
+- **Retail RFM, Cohorts & CLV (5,878 customers, UCI Online Retail II):** preserved inside [digital-campaign-performance-dashboard](https://github.com/errer441122/digital-campaign-performance-dashboard#lanalisi-del-mio-cv) · [interactive report](https://errer441122.github.io/digital-campaign-performance-dashboard/analysis.html)
+- **Delivery-Delay CX Driver Analysis (95,639 reviews, Olist):** preserved inside [ecommerce-cx-analytics](https://github.com/errer441122/ecommerce-cx-analytics#lanalisi-del-mio-cv)
 
 ---
 
