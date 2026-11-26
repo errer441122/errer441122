@@ -1,0 +1,13 @@
+name: Stessi numeri in inglese e in italiano
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  numeri:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: README.md e README.it.md hanno gli stessi numeri
+        run: python3 .github/stessi_numeri.py README.md README.it.md
